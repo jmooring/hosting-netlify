@@ -1,0 +1,8 @@
+// Test autoprefixer
+// ----------------------------------------------------------------------------
+
+@use "variables" as v;
+
+::placeholder {
+  color: gray;
+}

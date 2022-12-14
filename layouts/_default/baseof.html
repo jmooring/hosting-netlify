@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ or .Site.LanguageCode .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+  {{ partial "title.html" . }}
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+  {{ partialCached "css.html" . }}
+</head>
+<body>
+{{ partial "language-switcher.html" . }}
+{{ partial "menu.html" . }}
+{{ block "main" . }}
+
+{{ end }}
+</body>
+</html>

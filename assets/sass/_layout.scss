@@ -1,0 +1,17 @@
+// Layout
+// ----------------------------------------------------------------------------
+
+@use "variables" as v;
+
+:root {
+  color: v.$color;
+  font-family: sans-serif;
+  font-size: v.$font-size;
+  line-height: 1.5;
+  margin: 0 0 3rem 1rem;
+  max-width: 768px;
+}
+
+a {
+  color: #0000ff;
+}
