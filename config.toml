@@ -27,17 +27,14 @@ pageRef = '/'
 weight = '10'
 
 [[menu.main]]
-name = 'Posts'
-pageRef = '/posts'
+name = 'Articles'
+pageRef = '/articles'
 weight = '20'
 
-[[module.mounts]]
-source = 'assets'
-target = 'assets'
-
-[[module.mounts]]
-source = 'node_modules/normalize.css/normalize.css'
-target = 'assets/sass/normalize.scss'
+[[menu.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = '30'
 
 [[module.imports]]
 path = "github.com/jmooring/hugo-content"

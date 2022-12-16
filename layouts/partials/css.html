@@ -1,3 +1,3 @@
-{{- $opts := dict "transpiler" "dartsass" "targetPath" "css/main.css" "includePaths" (slice "node_modules") }}
+{{- $opts := dict "transpiler" "dartsass" "targetPath" "css/main.css" }}
 {{- $css := resources.Get "sass/main.scss" | toCSS $opts | postCSS | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">

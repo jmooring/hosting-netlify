@@ -4,6 +4,8 @@
 @use "variables" as v;
 
 :root {
-  margin: 1rem 0 3rem 1rem;
-  max-width: 768px;
+  color: v.$color;
+  font-family: v.$font-family;
+  font-size: v.$font-size;
+  line-height: v.$line-height;
 }

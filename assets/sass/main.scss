@@ -2,9 +2,11 @@
 // ----------------------------------------------------------------------------
 
 // Vendor
-@use "normalize";
+@use "../../node_modules/normalize.css/normalize";
+@use "third-party/bootstrap";
 
 // Everything else
 @use "variables";
 @use "layout";
 @use "test-autoprefixer";
+@use "shame";

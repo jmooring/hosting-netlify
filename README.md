@@ -6,6 +6,7 @@ The site requires:
 
 - The dart-sass-embedded executable to transpile Sass to CSS
 - Installation of Node.JS dependencies
+- Go to pull in a content Module
 
 ## Embedded Dart Sass
 
