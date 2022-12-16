@@ -38,3 +38,6 @@ target = 'assets'
 [[module.mounts]]
 source = 'node_modules/normalize.css/normalize.css'
 target = 'assets/sass/normalize.scss'
+
+[[module.imports]]
+path = "github.com/jmooring/hugo-content"
