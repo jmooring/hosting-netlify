@@ -1,10 +1,9 @@
 [build]
 command = """\
-  npm install "sass-embedded@${DART_SASS_VERSION}" && \
-  path_nm=/opt/build/repo/node_modules && \
-  path_dse=sass-embedded-linux-x64/dart-sass-embedded/dart-sass-embedded && \
-  cp "${path_nm}/${path_dse}" "${path_nm}/.bin" && \
-  hugo --gc --minify
+  npm install sass-embedded-linux-x64@${DART_SASS_VERSION} && \
+  cp /opt/build/repo/node_modules/sass-embedded-linux-x64/dart-sass-embedded/dart-sass-embedded /opt/build/repo/node_modules/.bin && \
+  dart-sass-embedded --version && \
+  hugo --gc --minify \
   """
 publish = "public"
 
