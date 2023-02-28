@@ -4,8 +4,6 @@ command = """\
   mkdir -p /opt/build/repo/node_modules/.bin && \
   cp -r /opt/build/repo/node_modules/sass-embedded-linux-x64/dart-sass-embedded/* /opt/build/repo/node_modules/.bin/ && \
   dart-sass-embedded --version && \
-  echo $PATH
-  ls
   hugo --gc --minify \
   """
 publish = "public"
