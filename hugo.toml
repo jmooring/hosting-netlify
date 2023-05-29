@@ -1,5 +1,5 @@
 baseURL = 'https://hosting-netlify.netlify.app/'
-languageCode = 'en-us'
+languageCode = 'en-US'
 title = 'Hosting Test - Netlify'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
