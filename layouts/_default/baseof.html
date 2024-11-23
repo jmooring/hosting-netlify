@@ -13,5 +13,10 @@
 {{ block "main" . }}
 
 {{ end }}
+
+{{ if eq .Sites.Default.Home . }}
+  {{ partialCached "publish-redirects-file.html" . }}
+{{ end }}
+
 </body>
 </html>

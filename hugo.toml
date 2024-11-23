@@ -6,6 +6,8 @@ defaultContentLanguageInSubdir = true
 disableKinds = ['RSS', 'taxonomy', 'term']
 enableGitInfo = true
 
+disableAliases = true
+
 [build]
 useResourceCacheWhen = 'never'
 
