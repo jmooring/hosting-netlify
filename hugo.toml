@@ -1,45 +1,61 @@
-baseURL = 'https://hosting-netlify.netlify.app/'
-languageCode = 'en-US'
-title = 'Hosting Test - Netlify'
-defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = true
-disableKinds = ['RSS', 'taxonomy', 'term']
-enableGitInfo = true
+baseURL              = 'https://example.org/'
+languageCode         = 'en-US'
+title                = 'Hosting Test - Netlify'
+enableGitInfo        = true
 
-disableAliases = true
+# -----------------------------------------------------------------------------
+# Caches
+# -----------------------------------------------------------------------------
 
-[build]
-useResourceCacheWhen = 'never'
+[caches.images]
+  dir = ':cacheDir/images'
 
-[languages.en]
-contentDir = 'content/en'
-languageCode = 'en-US'
-languageName = 'English'
-weight = 1
+# -----------------------------------------------------------------------------
+# Markup
+# -----------------------------------------------------------------------------
 
-[languages.de]
-contentDir = 'content/de'
-languageCode = 'de-DE'
-languageName = 'Deutsch'
-weight = 2
+[markup.goldmark.renderHooks.image]
+  enableDefault = true
 
-[[menu.main]]
-name = 'Home'
-pageRef = '/'
-weight = '10'
+[markup.goldmark.renderHooks.link]
+  enableDefault = true
 
-[[menu.main]]
-name = 'Articles'
-pageRef = '/articles'
-weight = '20'
+# -----------------------------------------------------------------------------
+# Menus
+# -----------------------------------------------------------------------------
 
-[[menu.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = '30'
+[[menus.main]]
+  name    = 'Home'
+  pageRef = '/'
+  weight  = 10
+
+[[menus.main]]
+  name    = 'Articles'
+  pageRef = '/articles'
+  weight  = 20
+
+[[menus.main]]
+  name    = 'Books'
+  pageRef = '/books'
+  weight  = 30
+
+[[menus.main]]
+  name    = 'Tags'
+  pageRef = '/tags'
+  weight  = 40
+
+[[menus.main]]
+  name    = 'Tests'
+  pageRef = '/tests'
+  weight  = 50
+
+# -----------------------------------------------------------------------------
+# Module
+# -----------------------------------------------------------------------------
 
 [module.hugoVersion]
-min = '0.146.7'
+  extended = true
+  min      = '0.146.7'
 
 [[module.imports]]
-path = "github.com/jmooring/hugo-module-content"
+  path = 'github.com/jmooring/hugo-module-content'
