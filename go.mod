@@ -1,5 +1,5 @@
 module github.com/jmooring/hosting-netlify
 
-go 1.19
+go 1.24.2
 
-require github.com/jmooring/hugo-content v0.0.0-20230313234416-48af0c13158a // indirect
+require github.com/jmooring/hugo-module-content v0.1.9 // indirect

@@ -1,6 +1,7 @@
 [build.environment]
-DART_SASS_VERSION = "1.81.0"
-HUGO_VERSION = "0.139.0"
+DART_SASS_VERSION = "1.87.0"
+HUGO_VERSION = "0.146.7"
+GO_VERSION = "1.24.2"
 TZ = "America/Los_Angeles"
 
 [build]
