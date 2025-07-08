@@ -1,5 +1,7 @@
 # Hosting Test - Netlify
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90021b64-de53-438c-8b85-a1f9038952aa/deploy-status)](https://app.netlify.com/projects/hosting-netlify/deploys)
+
 This is a test of hosting a Hugo site on Netlify.
 
 This site:
